@@ -138,6 +138,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 .main h1 {
   margin-top: 5px;
@@ -194,11 +195,11 @@ p {
 }
 .resume__content {
   display: flex;
+  flex-wrap: wrap;
 }
 .resume__pastexperience {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   padding: 40px;
 }
@@ -383,11 +384,40 @@ p {
   display: none;
   width: 1024px;
   margin: auto;
+  font-family: Arial;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px 0 rgba(211, 211, 211, 0.5), 0 10px 10px 0 rgba(211, 211, 211, 0.5);
 }
 .contact__container {
+  display: flex;
+  justify-content: space-between;
   border: solid 2px blue;
 }
-
+.contact__map {
+  width: 300px;
+}
+.contact__icon {
+  width: 40px;
+  height: 40px;
+}
+.contact__contactform {
+  width: 400px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__form--row {
+  display: flex;
+}
+.contact__form--column {
+  display: flex;
+  flex-direction: column;
+}
+.contact__textinput {
+  height: 20px;
+  width: 200px;
+}
 .blog {
   display: none;
   width: 1024px;
@@ -431,13 +461,6 @@ p {
 }
 :target ~ .default {
   display: none;
-}
-
-.meter {
-  height: 5px;
-  position: relative;
-  background: #f3efe6;
-  overflow: hidden;
 }
 
 @-webkit-keyframes progressBar {

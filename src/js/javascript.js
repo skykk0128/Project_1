@@ -9,6 +9,9 @@ document.getElementById("homepage").addEventListener("click", event => {
   document.getElementById("contactpage").classList.remove("current");
   document.getElementById("blogpage").classList.remove("current");
 });
+// if (document.getElementById("homepage").classList.contains()) {
+//
+// }
 document.getElementById("aboutpage").addEventListener("click", event => {
   document.getElementById("homepage").classList.remove("current");
   document.getElementById("aboutpage").classList.add("current");
@@ -79,7 +82,6 @@ window.onscroll = () => {
     navbar.classList.add("navstyle");
   }
 };
-
 
 // $(document).ready(function(){
 //   $("#blogpage").click(function(){
