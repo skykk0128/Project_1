@@ -1,0 +1,27 @@
+{
+  "name": "project_1",
+  "version": "1.0.0",
+  "description": "Remastered Project 1 Using React JS by Steven Wang",
+  "main": "./src/js/main.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skykk0128/Project_1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skykk0128/Project_1/issues"
+  },
+  "homepage": "https://github.com/skykk0128/Project_1#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^5.14.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.3.1"
+  }
+}
